@@ -1,0 +1,588 @@
+/* Reset básico: Remove margens e espaçamentos padrões */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box; /* Define o box-sizing como border-box, para incluir padding e borda no tamanho total */
+}
+
+/* Estilo básico do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial ou, se não disponível, uma fonte sans-serif */
+    background-color: #f9f9f9; /* Define a cor de fundo como cinza claro */
+    color: #333; /* Define a cor do texto como um cinza escuro */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333; /* Define a cor de fundo do cabeçalho como cinza escuro */
+    color: white; /* Define a cor do texto como branco */
+    padding: 20px; /* Adiciona um espaçamento interno de 20px ao redor do cabeçalho */
+    display: flex; /* Utiliza o Flexbox para organizar o conteúdo */
+    justify-content: space-between; /* Coloca os elementos do cabeçalho nas extremidades (esquerda e direita) */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+/* Estilo da lista de navegação no cabeçalho */
+header nav ul {
+    list-style-type: none; /* Remove os marcadores de lista (bolinhas ou números) */
+    display: flex; /* Organiza os itens da lista horizontalmente */
+    gap: 20px; /* Define um espaço de 20px entre cada item da lista */
+}
+
+/* Estilo dos links da lista de navegação */
+header nav ul li a {
+    color: white; /* Define a cor dos links como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Define os links com negrito */
+}
+
+/* Estilo da grade de produtos e categorias */
+.produtos-grid, .categorias-grid {
+    display: flex; /* Organiza os itens como uma grade flexível */
+    justify-content: space-around; /* Distribui os itens igualmente com espaço ao redor */
+    margin: 20px 0; /* Adiciona uma margem de 20px acima e abaixo da grade */
+}
+
+/* Estilo de cada produto e categoria */
+.produto, .categoria {
+    text-align: center; /* Centraliza o conteúdo de cada produto ou categoria */
+}
+
+/* Estilo das imagens de produtos e categorias */
+.produto img, .categoria img {
+    width: 150px; /* Define a largura da imagem em 150px */
+    height: 150px; /* Define a altura da imagem em 150px */
+    object-fit: cover; /* Garante que a imagem cubra totalmente o espaço sem distorcer */
+    margin-bottom: 10px; /* Adiciona um espaçamento de 10px abaixo da imagem */
+}
+
+/* Estilo dos botões e ações promocionais */
+button, .botao-promo, .botao-categoria {
+    padding: 10px 15px; /* Define o espaçamento interno do botão */
+    background-color: #1ec91e; /* Define a cor de fundo como cinza escuro */
+    color: white; /* Define a cor do texto como branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px;
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+}
+
+/* Efeito hover (quando o mouse está sobre o botão) */
+button:hover, .botao-promo:hover, .botao-categoria:hover {
+    background-color: #555; /* Muda a cor de fundo para um cinza mais claro quando o mouse está sobre o botão */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333; /* Define a cor de fundo como cinza escuro */
+    color: white; /* Define a cor do texto como branco */
+    text-align: center; /* Centraliza o conteúdo do rodapé */
+    padding: 10px; /* Adiciona um espaçamento interno de 10px */
+    margin-top: 20px; /* Adiciona uma margem superior de 20px */
+}
+
+/* Estilo das redes sociais no rodapé */
+.redes-sociais a {
+    color: white; /* Define a cor dos links das redes sociais como branco */
+    margin: 0 10px; /* Adiciona uma margem de 10px à esquerda e à direita de cada link */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Efeito hover nas redes sociais */
+.redes-sociais a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao link quando o mouse está sobre ele */
+}
+
+/* Estilo da seção de categorias populares */
+.categorias-populares {
+    padding: 20px; /* Adiciona um espaçamento interno de 20px ao redor da seção */
+    background-color: #fff; /* Define a cor de fundo como branco */
+    text-align: center; /* Centraliza o conteúdo da seção */
+}
+
+/* Estilo do título da seção de categorias populares */
+.categorias-populares h2 {
+    margin-bottom: 20px; /* Adiciona um espaçamento de 20px abaixo do título */
+}
+
+/* Estilo da grade de categorias */
+.categorias-grid {
+    display: flex; /* Organiza os itens em uma grade flexível */
+    justify-content: space-around; /* Distribui os itens igualmente com espaço ao redor */
+    gap: 20px; /* Define um espaço de 20px entre cada categoria */
+}
+
+/* Estilo de cada categoria */
+.categoria {
+    width: 30%; /* Define que cada categoria ocupa 30% da largura da seção */
+    text-align: center; /* Centraliza o conteúdo da categoria */
+}
+
+/* Estilo das imagens de categorias */
+.categoria img {
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Adiciona um espaçamento de 10px abaixo da imagem */
+    border-radius: 8px; /* Arredonda os cantos da imagem */
+}
+
+
+/* Estilo do botão de categoria */
+.botao-categoria {
+    background-color: #333; /* Define a cor de fundo como cinza escuro */
+    color: white; /* Define a cor do texto como branco */
+    padding: 10px 20px; /* Adiciona um espaçamento interno ao redor do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: inline-block; /* Exibe o botão como um bloco inline */
+}
+
+
+/* Estilo da seção de produtos em destaque */
+.produtos-destaque {
+    padding: 20px; /* Adiciona espaçamento interno de 20px ao redor da seção */
+    background-color: #f9f9f9; /* Define a cor de fundo da seção para um cinza claro */
+    text-align: center; /* Centraliza o conteúdo da seção */
+}
+
+/* Estilo do título da seção de produtos em destaque */
+.produtos-destaque h2 {
+    margin-bottom: 20px; /* Adiciona um espaçamento de 20px abaixo do título */
+    font-size: 24px; /* Define o tamanho da fonte para 24px */
+    color: #333; /* Define a cor do texto como um cinza escuro */
+}
+
+/* Cria uma grade flexível para os produtos em destaque */
+.destaque-grid {
+    display: flex; /* Utiliza flexbox para organizar os itens */
+    justify-content: space-around; /* Distribui os itens igualmente com espaço ao redor */
+    gap: 20px; /* Define um espaço de 20px entre os itens */
+    flex-wrap: wrap; /* Permite que os itens "quebrem" linha e se reorganizem em telas menores */
+}
+
+/* Estiliza cada produto dentro da grade de produtos em destaque */
+.produto {
+    width: 30%; /* Define que cada produto ocupa 30% da largura da seção */
+    background-color: #fff; /* Define a cor de fundo do produto como branco */
+    padding: 15px; /* Adiciona um espaçamento interno de 15px ao redor do produto */
+    border-radius: 8px; /* Arredonda os cantos do produto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao redor do produto */
+    text-align: center; /* Centraliza o conteúdo dentro de cada produto */
+}
+
+/* Estiliza as imagens dos produtos em destaque */
+.produto img {
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Adiciona um espaçamento de 10px abaixo da imagem */
+    border-radius: 5px; /* Arredonda os cantos da imagem */
+}
+
+/* Estiliza o título (nome) do produto */
+.produto h3 {
+    margin: 10px 0; /* Adiciona um espaçamento de 10px acima e abaixo do título */
+    font-size: 18px; /* Define o tamanho da fonte como 18px */
+    color: #333; /* Define a cor do texto como um cinza escuro */
+}
+
+/* Estiliza o preço do produto */
+.produto p {
+    font-size: 16px; /* Define o tamanho da fonte como 16px */
+    color: #777; /* Define a cor do texto como um cinza claro */
+    margin-bottom: 15px; /* Adiciona um espaçamento de 15px abaixo do preço */
+}
+
+/* Estilo do botão de compra */
+.botao-categoria {
+    background-color: #4CAF50; /* Define a cor de fundo do botão como verde */
+    color: #fff; /* Define a cor do texto do botão como branco */
+    padding: 10px 20px; /* Adiciona um espaçamento interno ao redor do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+
+.promocoes {
+    padding: 20px; /* Adiciona um espaçamento interno de 20px ao redor da seção */
+    background-color: #ffe6e6; /* Define a cor de fundo da seção como um vermelho claro, indicando promoção */
+    text-align: center; /* Centraliza o conteúdo da seção */
+}
+
+/* Estilo do título da seção de promoções */
+.promocoes h2 {
+    margin-bottom: 20px; /* Adiciona um espaçamento de 20px abaixo do título */
+    font-size: 24px; /* Define o tamanho da fonte para 24px */
+    color: #b30000; /* Define a cor do texto como vermelho escuro */
+}
+
+/* Estilo da grade de promoções */
+.promocoes-grid {
+    display: flex; /* Organiza os itens em uma grade flexível */
+    justify-content: space-around; /* Distribui os itens igualmente com espaço ao redor */
+    gap: 20px; /* Define um espaço de 20px entre cada item */
+    flex-wrap: wrap; /* Permite que os itens quebrem de linha em telas menores */
+}
+
+/* Estiliza cada promoção dentro da grade */
+.promo {
+    width: 30%; /* Define que cada item ocupa 30% da largura da seção */
+    background-color: #fff; /* Define a cor de fundo como branco */
+    padding: 15px; /* Adiciona um espaçamento interno de 15px */
+    border-radius: 8px; /* Arredonda os cantos do item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor do item */
+    text-align: center; /* Centraliza o conteúdo dentro do item */
+    position: relative; /* Define o posicionamento relativo para o uso de etiquetas */
+}
+
+/* Estiliza a imagem da promoção */
+.promo img {
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Adiciona um espaçamento de 10px abaixo da imagem */
+    border-radius: 5px; /* Arredonda os cantos da imagem */
+}
+
+/* Estiliza o título da promoção */
+.promo h3 {
+    margin: 10px 0; /* Adiciona um espaçamento de 10px acima e abaixo do título */
+    font-size: 18px; /* Define o tamanho da fonte como 18px */
+    color: #333; /* Define a cor do texto como cinza escuro */
+}
+
+/* Estiliza o preço original (riscado) */
+.promo .preco-original {
+    font-size: 16px; /* Define o tamanho da fonte como 16px */
+    color: #999; /* Define a cor do texto como cinza claro */
+    text-decoration: line-through; /* Aplica o efeito de risco no preço original */
+    margin-bottom: 10px; /* Adiciona um espaçamento de 10px abaixo do preço */
+}
+
+/* Estiliza o preço promocional */
+.promo .preco-promocional {
+    font-size: 20px; /* Define o tamanho da fonte como 20px */
+    color: #b30000; /* Define a cor do texto como vermelho escuro */
+    font-weight: bold; /* Define o texto como negrito */
+    margin-bottom: 15px; /* Adiciona um espaçamento de 15px abaixo do preço */
+}
+
+/* Estiliza o selo de desconto (ex: 50% off) */
+.selo-desconto {
+    position: absolute; /* Posiciona o selo dentro do contêiner pai */
+    top: 10px; /* Define o selo no topo */
+    left: 10px; /* Define o selo na esquerda */
+    background-color: #ff0000; /* Define a cor de fundo do selo como vermelho */
+    color: white; /* Define a cor do texto como branco*/
+}
+/* Estilo do botão de comprar na promoção */
+.botao-promo {
+    background-color: #ff6600; /* Define a cor de fundo do botão como laranja */
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 10px 20px; /* Adiciona um espaçamento interno ao redor do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 10px; /* Arredonda os cantos do botão */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: block; /* Exibe o botão como um bloco */
+    margin: 20px auto 0; /* Centraliza o botão e adiciona um espaçamento superior */
+}
+/* Seção Quem Somos */
+.quem-somos {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.quem-somos h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.quem-somos .descricao {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quem-somos p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.quem-somos strong {
+    color: #333;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .redes-sociais a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer .redes-sociais a:hover {
+    text-decoration: underline;
+}
+/* Seção Produtos */
+.produtos {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.lista-produtos {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-produtos li {
+    margin: 20px 0;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.lista-produtos li h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.lista-produtos li p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+/* Estilos dos botões de produtos */
+.botao-produto {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-produto:hover {
+    background-color: #e65c00;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .redes-sociais a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer .redes-sociais a:hover {
+    text-decoration: underline;
+}
+/* Estilos para a seção de login */
+.login {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botao-login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-login:hover {
+    background-color: #e65c00;
+}
+
+.login p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Estilos para a seção de registro */
+.registro {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registro h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botao-registro {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-registro:hover {
+    background-color: #e65c00;
+}
+
+.registro p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.registro a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Estilos para a seção de contato */
+.contato {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botao-contato {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-contato:hover {
+    background-color: #e65c00;
+}
+
+.informacoes-contato {
+    margin-top: 30px;
+}
+
+.informacoes-contato h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.informacoes-contato p {
+    margin: 5px 0;
+}

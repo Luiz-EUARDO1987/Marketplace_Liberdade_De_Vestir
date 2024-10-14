@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiberdadeDeVestir - Login</title>
+    <link rel="stylesheet" href="/html/css/LiberdadeDeVestir.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body>
+
+    <!-- Cabeçalho com o nome da loja e barra de navegação -->
+    <header>
+        <div class="logo">
+            <h1>Liberdade de Vestir</h1> <!-- Nome do marketplace -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="liberdadeDeVestir.html">Início</a></li> <!-- Link para a página inicial -->
+                <li><a href="contato.html">Contato</a></li> <!-- Link para a página de contato -->
+                <li><a href="produtos.html">Produtos</a></li> <!-- Link para a página "Produtos" -->
+                <li><a href="quemSomos.html">Quem Somos</a></li> <!-- Link para a página "Quem Somos" -->
+                <li><a href="login.html">Login</a></li> <!-- Link para a página de login -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de login -->
+    <section class="login">
+        <h2>Login</h2> <!-- Título da seção -->
+
+        <form action="autenticar.php" method="POST"> <!-- Simulação de envio de formulário -->
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit" class="botao-login">Entrar</button> <!-- Botão de envio -->
+        </form>
+
+        <p>Não tem uma conta? <a href="registro.html">Registre-se aqui</a></p> <!-- Link para a página de registro -->
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Liberdade de Vestir - Todos os direitos reservados.</p> <!-- Mensagem de direitos autorais -->
+        <div class="redes-sociais">
+            <a href="#">Facebook</a>  |  <!-- Link para Facebook -->
+            <a href="#">Instagram</a> |  <!-- Link para Instagram -->
+            <a href="#">Twitter</a> <!-- Link para Twitter -->
+        </div>
+    </footer>
+
+</body>
+</html>
